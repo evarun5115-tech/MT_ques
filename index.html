@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Cart to Conversion — Academic Survey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="survey-container">
+
+    <!-- Header & Intro Box -->
+    <header class="survey-header">
+      <div class="academic-badge">Academic Research Questionnaire</div>
+      <h1>From Cart to Conversion: An Integrated Orange, JASP and SmartPLS-SEM Approach to Understanding and Reducing E-Commerce Cart Abandonment</h1>
+      
+      <div class="info-card">
+        <p>This questionnaire is completely anonymous and is being conducted for academic purposes as part of a Marketing Technology project.</p>
+        <p>The purpose of this study is to understand the factors that influence customers' decisions to complete or abandon online shopping carts.</p>
+        <p>Your responses will be used only for academic analysis. No name, phone number, email address, or other personally identifiable information is required.</p>
+        <div class="time-estimate">⏱ Estimated time: 3–5 minutes</div>
+      </div>
+    </header>
+
+    <!-- Main Questionnaire Form -->
+    <form id="questionnaire-form">
+
+      <!-- SECTION A -->
+      <section class="section-card">
+        <div class="section-header">
+          <h2>Section A — Basic Information</h2>
+          <p>Please select the options that best describe your online shopping background.</p>
+        </div>
+
+        <!-- Q1 -->
+        <div class="question-box">
+          <label class="q-title">1. Gender <span class="req">*</span></label>
+          <div class="options-list">
+            <label class="radio-label"><input type="radio" name="gender" value="Male" required> Male</label>
+            <label class="radio-label"><input type="radio" name="gender" value="Female"> Female</label>
+            <label class="radio-label"><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+            <label class="radio-label"><input type="radio" name="gender" value="Other"> Other</label>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question-box">
+          <label class="q-title">2. Age <span class="req">*</span></label>
+          <div class="options-list">
+            <label class="radio-label"><input type="radio" name="age" value="Below 18" required> Below 18</label>
+            <label class="radio-label"><input type="radio" name="age" value="18–24"> 18–24</label>
+            <label class="radio-label"><input type="radio" name="age" value="25–34"> 25–34</label>
+            <label class="radio-label"><input type="radio" name="age" value="35–44"> 35–44</label>
+            <label class="radio-label"><input type="radio" name="age" value="45–54"> 45–54</label>
+            <label class="radio-label"><input type="radio" name="age" value="55 or above"> 55 or above</label>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question-box">
+          <label class="q-title">3. How frequently do you shop online? <span class="req">*</span></label>
+          <div class="options-list">
+            <label class="radio-label"><input type="radio" name="frequency" value="Less than once a month" required> Less than once a month</label>
+            <label class="radio-label"><input type="radio" name="frequency" value="1–2 times a month"> 1–2 times a month</label>
+            <label class="radio-label"><input type="radio" name="frequency" value="3–5 times a month"> 3–5 times a month</label>
+            <label class="radio-label"><input type="radio" name="frequency" value="6–10 times a month"> 6–10 times a month</label>
+            <label class="radio-label"><input type="radio" name="frequency" value="More than 10 times a month"> More than 10 times a month</label>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question-box">
+          <label class="q-title">4. Which online shopping category do you purchase most frequently? <span class="req">*</span></label>
+          <div class="options-list">
+            <label class="radio-label"><input type="radio" name="category" value="Clothing/Fashion" required> Clothing/Fashion</label>
+            <label class="radio-label"><input type="radio" name="category" value="Electronics"> Electronics</label>
+            <label class="radio-label"><input type="radio" name="category" value="Beauty/Personal Care"> Beauty/Personal Care</label>
+            <label class="radio-label"><input type="radio" name="category" value="Food/Grocery"> Food/Grocery</label>
+            <label class="radio-label"><input type="radio" name="category" value="Home & Lifestyle"> Home & Lifestyle</label>
+            <label class="radio-label"><input type="radio" name="category" value="Other"> Other</label>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question-box screening-box">
+          <label class="q-title">5. Have you ever added a product to an online shopping cart but not completed the purchase? <span class="req">*</span></label>
+          <p class="screening-note">💡 Screening Question: Establishes whether respondents have experienced cart abandonment.</p>
+          <div class="options-list horizontal">
+            <label class="radio-label"><input type="radio" name="screening" value="Yes" required> Yes</label>
+            <label class="radio-label"><input type="radio" name="screening" value="No"> No</label>
+            <label class="radio-label"><input type="radio" name="screening" value="Not sure"> Not sure</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION B -->
+      <section class="section-card">
+        <div class="section-header">
+          <h2>Section B — Main Questionnaire</h2>
+          <p>Please rate your agreement on the 5-point scale below.</p>
+        </div>
+
+        <div class="scale-guide">
+          <span>1 = Strongly Disagree</span>
+          <span>2 = Disagree</span>
+          <span>3 = Neutral</span>
+          <span>4 = Agree</span>
+          <span>5 = Strongly Agree</span>
+        </div>
+
+        <!-- Price & Cost Perception -->
+        <div class="category-block">
+          <h3>Price & Cost Perception</h3>
+          
+          <div class="likert-box">
+            <p class="likert-title">6. Unexpected delivery charges or additional costs make me reconsider completing an online purchase. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q6" value="1" required> 1</label>
+              <label><input type="radio" name="q6" value="2"> 2</label>
+              <label><input type="radio" name="q6" value="3"> 3</label>
+              <label><input type="radio" name="q6" value="4"> 4</label>
+              <label><input type="radio" name="q6" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">7. I compare prices on other shopping platforms before completing an online purchase. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q7" value="1" required> 1</label>
+              <label><input type="radio" name="q7" value="2"> 2</label>
+              <label><input type="radio" name="q7" value="3"> 3</label>
+              <label><input type="radio" name="q7" value="4"> 4</label>
+              <label><input type="radio" name="q7" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">8. Finding a better price elsewhere can make me abandon my shopping cart. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q8" value="1" required> 1</label>
+              <label><input type="radio" name="q8" value="2"> 2</label>
+              <label><input type="radio" name="q8" value="3"> 3</label>
+              <label><input type="radio" name="q8" value="4"> 4</label>
+              <label><input type="radio" name="q8" value="5"> 5</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust & Perceived Risk -->
+        <div class="category-block">
+          <h3>Trust & Perceived Risk</h3>
+
+          <div class="likert-box">
+            <p class="likert-title">9. I feel confident providing my personal and payment information to online shopping platforms. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q9" value="1" required> 1</label>
+              <label><input type="radio" name="q9" value="2"> 2</label>
+              <label><input type="radio" name="q9" value="3"> 3</label>
+              <label><input type="radio" name="q9" value="4"> 4</label>
+              <label><input type="radio" name="q9" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">10. I am more likely to complete a purchase when the platform clearly communicates its return and refund policies. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q10" value="1" required> 1</label>
+              <label><input type="radio" name="q10" value="2"> 2</label>
+              <label><input type="radio" name="q10" value="3"> 3</label>
+              <label><input type="radio" name="q10" value="4"> 4</label>
+              <label><input type="radio" name="q10" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">11. Concerns about payment security can make me abandon my shopping cart. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q11" value="1" required> 1</label>
+              <label><input type="radio" name="q11" value="2"> 2</label>
+              <label><input type="radio" name="q11" value="3"> 3</label>
+              <label><input type="radio" name="q11" value="4"> 4</label>
+              <label><input type="radio" name="q11" value="5"> 5</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Website/App Experience -->
+        <div class="category-block">
+          <h3>Website/App Experience</h3>
+
+          <div class="likert-box">
+            <p class="likert-title">12. I find online shopping websites/apps easy to navigate. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q12" value="1" required> 1</label>
+              <label><input type="radio" name="q12" value="2"> 2</label>
+              <label><input type="radio" name="q12" value="3"> 3</label>
+              <label><input type="radio" name="q12" value="4"> 4</label>
+              <label><input type="radio" name="q12" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">13. A complicated or lengthy checkout process can make me abandon my cart. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q13" value="1" required> 1</label>
+              <label><input type="radio" name="q13" value="2"> 2</label>
+              <label><input type="radio" name="q13" value="3"> 3</label>
+              <label><input type="radio" name="q13" value="4"> 4</label>
+              <label><input type="radio" name="q13" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">14. A smooth and convenient checkout experience makes me more likely to complete my purchase. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q14" value="1" required> 1</label>
+              <label><input type="radio" name="q14" value="2"> 2</label>
+              <label><input type="radio" name="q14" value="3"> 3</label>
+              <label><input type="radio" name="q14" value="4"> 4</label>
+              <label><input type="radio" name="q14" value="5"> 5</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promotions & Personalization -->
+        <div class="category-block">
+          <h3>Promotions & Personalization</h3>
+
+          <div class="likert-box">
+            <p class="likert-title">15. Discounts or promotional offers encourage me to complete an online purchase. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q15" value="1" required> 1</label>
+              <label><input type="radio" name="q15" value="2"> 2</label>
+              <label><input type="radio" name="q15" value="3"> 3</label>
+              <label><input type="radio" name="q15" value="4"> 4</label>
+              <label><input type="radio" name="q15" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">16. Personalized offers based on my shopping behaviour would make me more likely to complete my purchase. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q16" value="1" required> 1</label>
+              <label><input type="radio" name="q16" value="2"> 2</label>
+              <label><input type="radio" name="q16" value="3"> 3</label>
+              <label><input type="radio" name="q16" value="4"> 4</label>
+              <label><input type="radio" name="q16" value="5"> 5</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Purchase Intention -->
+        <div class="category-block">
+          <h3>Purchase Intention</h3>
+
+          <div class="likert-box">
+            <p class="likert-title">17. When I add a product to my cart, I generally intend to purchase it. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q17" value="1" required> 1</label>
+              <label><input type="radio" name="q17" value="2"> 2</label>
+              <label><input type="radio" name="q17" value="3"> 3</label>
+              <label><input type="radio" name="q17" value="4"> 4</label>
+              <label><input type="radio" name="q17" value="5"> 5</label>
+            </div>
+          </div>
+
+          <div class="likert-box">
+            <p class="likert-title">18. I am likely to complete an online purchase when the product, price and checkout experience meet my expectations. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q18" value="1" required> 1</label>
+              <label><input type="radio" name="q18" value="2"> 2</label>
+              <label><input type="radio" name="q18" value="3"> 3</label>
+              <label><input type="radio" name="q18" value="4"> 4</label>
+              <label><input type="radio" name="q18" value="5"> 5</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Abandonment -->
+        <div class="category-block">
+          <h3>Cart Abandonment</h3>
+
+          <div class="likert-box">
+            <p class="likert-title">19. I often postpone or abandon an online purchase even after adding the product to my cart. <span class="req">*</span></p>
+            <div class="scale-options">
+              <label><input type="radio" name="q19" value="1" required> 1</label>
+              <label><input type="radio" name="q19" value="2"> 2</label>
+              <label><input type="radio" name="q19" value="3"> 3</label>
+              <label><input type="radio" name="q19" value="4"> 4</label>
+              <label><input type="radio" name="q19" value="5"> 5</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION C -->
+      <section class="section-card">
+        <div class="section-header">
+          <h2>Section C — Open-Ended Questions</h2>
+          <p>Please share your qualitative thoughts below.</p>
+        </div>
+
+        <div class="question-box">
+          <label class="q-title">20. What is the main reason that would make you abandon an online shopping cart?</label>
+          <textarea class="textarea-field" name="q20" rows="3" placeholder="Your feedback..."></textarea>
+        </div>
+
+        <div class="question-box">
+          <label class="q-title">21. What could an online shopping platform do to encourage you to complete your purchase?</label>
+          <textarea class="textarea-field" name="q21" rows="3" placeholder="Your feedback..."></textarea>
+        </div>
+      </section>
+
+      <!-- Submit Footer -->
+      <div class="submit-footer">
+        <button type="submit" class="submit-btn" id="submit-btn">
+          <span>Submit Questionnaire</span>
+        </button>
+      </div>
+    </form>
+
+    <!-- Success Message Overlay -->
+    <div class="success-screen" id="success-screen" style="display: none;">
+      <div class="success-card">
+        <div class="check-icon">🎉</div>
+        <h2>Thank You!</h2>
+        <p>Your responses have been recorded anonymously and saved directly to the research Google Sheet.</p>
+        <button class="btn-reset" onclick="location.reload()">Submit Another Response</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
